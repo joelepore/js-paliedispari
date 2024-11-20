@@ -16,11 +16,7 @@ if (isPalindroma(inputWord)) {
 console.log(message);
 
 function isPalindroma(word) {
-  if (word.toLowerCase() === reverse(word).toLowerCase()) {
-    return true;
-  } else {
-    return false;
-  }
+  return word.toLowerCase() === reverse(word).toLowerCase();
 }
 
 function reverse(word) {
