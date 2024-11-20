@@ -19,7 +19,7 @@ do {
 
 do {
   userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
-} while (userNumber < 1 || userNumber > 5);
+} while (isNaN(userNumber) || userNumber < 1 || userNumber > 5);
 
 // 2. Genero un numero random usando una funzione creata ad hoc 
 const pcNumber = getRandomNumber(1, 5);
